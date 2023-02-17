@@ -1,7 +1,7 @@
 import Button from "../../../../Components/UI/Button/Button";
 import style from './TaskTimer.module.css';
 import useTimer from '../../../../Hooks/useTimer';
-import { useContext, useEffect } from "react";
+import {  useEffect } from "react";
 // import { TasksContext } from "../../../Contexts/TasksContext";
 import { editTask } from '../../.././../store/TasksSlice';
 import { useDispatch } from 'react-redux';
@@ -20,7 +20,7 @@ const TaskTimer = ({ index, onCloseModal }) => {
 		return () => {
 			stopTimer();
 		}
-	}, []);
+	}, [startTimer, stopTimer]);
 
 	const handleStopTimer = () => {
 		const savedTime = stopTimer();

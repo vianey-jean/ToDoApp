@@ -5,11 +5,11 @@ const Header = () => {
 
 	return (
 		<header>
-			<h1>Todo List</h1>
+			<h1>Liste des tâches</h1>
 			<nav>
 				<ul>
 					<li>
-						<Link to={ '/' }>Home</Link>
+						<Link to={ '/' }>Accueil</Link>
 					</li>
 					{/*<li>
 						<Link to={ '/about' }>About</Link>

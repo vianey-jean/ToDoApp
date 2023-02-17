@@ -17,8 +17,8 @@ const Tasks = () => {
 	return (
 		<section className='container' style={{ position: 'relative' }}>
 			<div className={style['tasks-header']}>
-				<PageTitle count={ tasksData.count } title={ `Task${tasksData.count > 1 ? 's' : ''}` } />
-				<Button onClick={ () => setIsNewTaskModalOpen(true) }>New Task</Button>
+				<PageTitle count={ tasksData.count } title={ `Tâches : ${tasksData.count > 1 ? 's' : ''}` } />
+				<Button onClick={ () => setIsNewTaskModalOpen(true) }>Ajouter Tâches </Button>
 			</div>
 			<TasksTable />
 			<Modal isOpen={ isNewTaskModalOpen } setIsOpen={ setIsNewTaskModalOpen }>

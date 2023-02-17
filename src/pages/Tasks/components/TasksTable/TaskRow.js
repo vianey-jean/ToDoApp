@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { useDispatch } from 'react-redux';
 import { parseSecondsToHMS } from '../../../../utils/time';
 // import { TasksContext } from "../../../Contexts/TasksContext";
@@ -10,7 +10,9 @@ import TaskTimer from "../TaskTimer/TaskTimer";
 
 const TaskRow = ({ task, index }) => {
 
+	// eslint-disable-next-line no-undef
 	const [ isEditTaskModalOpen, setIsEditTaskModalOpen ] = useState(false);
+	// eslint-disable-next-line no-undef
 	const [ isTimerModalOpen, setIsTimerModalOpen ] = useState(false);
 	
 	// const { removeTask, toggleTaskIsDone } = useContext(TasksContext);
@@ -44,9 +46,9 @@ const TaskRow = ({ task, index }) => {
 					{ task.time && parseSecondsToHMS(task.time) }
 				</td>
 				<td style={{ display: 'flex', gap: 4, justifyContent: 'end' }}>
-					<Button onClick={ () => setIsTimerModalOpen(true) }>Launch Timer</Button>
-					<Button variant="danger" onClick={ handleDeleteTask }>Delete</Button>
-					<Button onClick={ () => setIsEditTaskModalOpen(true) }>Edit</Button>
+					<Button onClick={ () => setIsTimerModalOpen(true) }>Lancer le chrono</Button>
+					<Button variant="danger" onClick={ handleDeleteTask }>Supprimer</Button>
+					<Button onClick={ () => setIsEditTaskModalOpen(true) }>Modifier</Button>
 				</td>
 			</tr>
 			<Modal isOpen={ isEditTaskModalOpen } setIsOpen={ setIsEditTaskModalOpen } title={ task.title }>

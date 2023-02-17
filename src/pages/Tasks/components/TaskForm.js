@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 // import { TasksContext } from "../../Contexts/TasksContext";
 import Button from "../../../Components/UI/Button/Button";
 import TextareaField from "../../../Components/UI/Forms/TextareaField";
@@ -23,7 +23,7 @@ const TaskForm = ({ closeModal, value, index }) => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		if (invalidFields.length > 0) {
-			alert('There are errors in the form.');
+			alert('Il y a des erreurs dans le formulaire');
 			return;
 		}
 
@@ -65,8 +65,8 @@ const TaskForm = ({ closeModal, value, index }) => {
 		<form onSubmit={ handleSubmit }>
 			<TextField
 				name='title'
-				placeholder='New task title'
-				label='Title'
+				placeholder='Nouveau titre de tâche'
+				label='Titre'
 				value={ formValue.title }
 				onChange={ (value) => setFormValue({ ...formValue, title: value }) }
 				validation={ {
@@ -79,7 +79,7 @@ const TaskForm = ({ closeModal, value, index }) => {
 			/>
 			<TextareaField
 				name='description'
-				placeholder='Write your description here...'
+				placeholder='Écrivez votre description ici...'
 				label='Description'
 				value={ formValue.description }
 				onChange={ (value) => setFormValue({ ...formValue, description: value }) }
@@ -90,7 +90,7 @@ const TaskForm = ({ closeModal, value, index }) => {
 				} }
 				onError={ handleError }
 			/>
-			<Button type='submit'>Save</Button>
+			<Button type='submit'>Enregistrer</Button>
 		</form>
 	);
 };
