@@ -15,11 +15,11 @@ const TextareaField = ({ label, name, placeholder, validation, value, onChange, 
 
 	useEffect(() => {
 		validateField(value, validation);
-	}, [ value ]);
+	}, [validateField, validation, value]);
 
 	useEffect(() => {
 		onError({ name, error });
-	}, [ error, name ]);
+	}, [error, name, onError]);
 
 	return (
 		<div className={ style['input-group'] }>

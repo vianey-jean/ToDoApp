@@ -20,7 +20,7 @@ const TaskTimer = ({ index, onCloseModal }) => {
 		return () => {
 			stopTimer();
 		}
-	}, [startTimer, stopTimer]);
+	}, []);
 
 	const handleStopTimer = () => {
 		const savedTime = stopTimer();
