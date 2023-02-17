@@ -7,13 +7,13 @@ const useFieldError = () => {
 	const validateField = (value, { type, required, minLength, maxLength }) => {
 
 		if (type && typeof value !== type) {
-			setError(`The value must be a ${type}`);
+			setError(`La valeur doit être un ${type}`);
 		} else if (required && !value) {
-			setError(`The field is required`);
+			setError(`Ce champ est requis`);
 		} else if (minLength && value.length < minLength) {
-			setError(`The value must have at least ${minLength} characters`);
+			setError(`La valeur doit avoir au moins ${minLength} Caractères`);
 		} else if (maxLength && value.length > maxLength) {
-			setError(`The value is limited to ${maxLength} characters`);
+			setError(`La valeur est limitée à${maxLength} Caractères`);
 		} else {
 			setError(null);
 		}
