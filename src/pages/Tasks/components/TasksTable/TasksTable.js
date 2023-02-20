@@ -14,12 +14,12 @@ const TasksTable = () => {
 			<table className={ style['tasks-table'] }>
 				<thead>
 					<tr>
-						<th>Statut</th>
-						<th>Titre</th>
-						<th>Description</th>
-						<th>Créé à</th>
-						<th>Temps</th>
-						<th>Actions</th>
+						<th>Statut :</th>
+						<th>Titre :</th>
+						<th>Description :</th>
+						<th>Créé à :</th>
+						<th>Temps :</th>
+						<th>Actions :</th>
 					</tr>
 				</thead>
 				<tbody>
