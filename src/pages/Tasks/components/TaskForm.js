@@ -85,7 +85,7 @@ const TaskForm = ({ closeModal, value, index }) => {
 				validation={ {
 					required: false,
 					type: 'string',
-					maxLength: 1000,
+					maxLength: 100000,
 				} }
 				onError={ handleError }
 			/>
