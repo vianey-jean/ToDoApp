@@ -73,7 +73,6 @@ const TaskForm = ({ closeModal, value, index }) => {
 					required: true,
 					type: 'string',
 					minLength: 2,
-					maxLength: 25,
 				} }
 				onError={ handleError }
 			/>
