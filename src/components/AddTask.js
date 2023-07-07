@@ -51,7 +51,7 @@ function AddTask({ addTask }) {
           onChange={(e) => setContent(e.target.value)}
         />
         <Button
-          colorScheme='twitter'
+          colorScheme='whatsapp'
           px='8'
           pl='10'
           pr='10'
