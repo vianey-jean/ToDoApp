@@ -56,19 +56,19 @@ function DeleteTask({ task, deleteTask }) {
       <Modal isCentered isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent w='90%'>
-          <ModalHeader>Do you really want to delete the task?</ModalHeader>
+          <ModalHeader>Voullez-vous vraiment supprimer cette liste?</ModalHeader>
           <ModalBody>
             <Text>{task.body}</Text>
           </ModalBody>
           <ModalFooter>
             <Button mr={3} onClick={onClose}>
-              No
+              Non
             </Button>
             <Button
               colorScheme='red'
               onClick={() => deleteTask(task.id, onClose)}
             >
-              Yes
+              Oui
             </Button>
           </ModalFooter>
         </ModalContent>
