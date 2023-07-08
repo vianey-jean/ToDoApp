@@ -46,7 +46,7 @@ function AddTask({ addTask }) {
           h='46'
           borderColor={!statusInput ? "red.300" : "transparent"}
           variant='filled'
-          placeholder='Entrer votre liste'
+          placeholder='Entrer votre Liste'
           value={content}
           onChange={(e) => setContent(e.target.value)}
         />
