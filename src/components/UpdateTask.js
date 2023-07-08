@@ -33,13 +33,13 @@ function UpdateTask({ task, updateTask }) {
       >
         <ModalOverlay />
         <ModalContent w='90%'>
-          <ModalHeader>Changer le liste</ModalHeader>
+          <ModalHeader>Changer la liste</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
             <FormControl>
               <Input
                 ref={initialRef}
-                placeholder='Enter your task'
+                placeholder='Entrer votre liste'
                 defaultValue={task.body}
                 onChange={(e) => setBody(e.target.value)}
                 onFocus={(e) => setBody(e.target.value)}
@@ -52,10 +52,10 @@ function UpdateTask({ task, updateTask }) {
               Annuler
             </Button>
             <Button
-              colorScheme='blue'
+              colorScheme='green'
               onClick={() => updateTask(task.id, body, onClose)}
             >
-              Ajouter
+              Valider
             </Button>
           </ModalFooter>
         </ModalContent>
