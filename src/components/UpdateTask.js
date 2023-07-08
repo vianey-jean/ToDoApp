@@ -39,7 +39,7 @@ function UpdateTask({ task, updateTask }) {
             <FormControl>
               <Input
                 ref={initialRef}
-                placeholder='Entrer votre liste'
+                placeholder='Entrer votre Liste'
                 defaultValue={task.body}
                 onChange={(e) => setBody(e.target.value)}
                 onFocus={(e) => setBody(e.target.value)}
