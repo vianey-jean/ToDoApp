@@ -14,7 +14,7 @@ function AddTask({ addTask }) {
 
     if (!taskText) {
       toast({
-        title: "Entrer votre liste",
+        title: "Entrer votre Liste",
         position: "top",
         status: "warning",
         duration: 2000,

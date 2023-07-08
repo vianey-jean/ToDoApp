@@ -46,7 +46,7 @@ function App() {
 
     if (!info) {
       toast({
-        title: "Enter your task",
+        title: "Entrer votre Liste",
         position: "top",
         status: "warning",
         duration: 2000,
